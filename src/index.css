@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.background-image {
+    background-color: #06231D;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+}
+.main-desktop {
+    display: flex;
+}
+.mobile-res{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .main-desktop {
+        display: none;
+    }
+    .mobile-res{
+    display: inline;
+}
+}
