@@ -18,7 +18,7 @@ function App() {
   const fetchUsers = async () => {
     try {
       let users = await axios.get(
-        `http://localhost:4000/users?page=${currectPage}&limit=${limit}`
+        `http://localhost:3000/workers?page=${currectPage}&limit=${limit}`
       );
       console.log(users.data);
       setPaginationCount(users.data.totalPages);
