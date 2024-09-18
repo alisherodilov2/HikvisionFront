@@ -7,7 +7,10 @@ export default function Navbar() {
         <div className="flex">
           <div className="w-3"></div>
           <a href="/" className="text-white text-lg  font-semibold text-center">
-            <img src="" alt="logo" />
+            <h1>
+              ГОСУДАРСТВЕННЫЙ КОМИТЕТ ПО АВТОМОБИЛЬНЫМ ДОРОГАМ <br />
+              РЕСПУБЛИКИ УЗБЕКИСТАНА
+            </h1>
           </a>
         </div>
         <div className="flex  items-center">

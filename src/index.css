@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 .background-image {
+    position: relative;
     background-color: #06231D;
-    background-image: url("");
+    background-image: url("./image/background.png");
     background-size: cover;
     background-position: center;
 }
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568); /* Adjust the opacity (0.5) to make it darker or lighter */
+    z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+
+.background-image > * {
+    position: relative;
+    z-index: 2; /* Ensure content inside the element is above the overlay */
+}
+
 .main-desktop {
     display: flex;
 }
